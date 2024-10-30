@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+        <div class="formtitle">
+            <h2 style="color: blue;font-size: larger;">Member Registration Form</h2>
+        </div>
+        
+        FirstName: <input type="text" class="firstname"><br>
+        LastName: <input type="text" class="lastname"><br>
+        Gender: 
+        <select class="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+        Enrollment_No: <input type="number" class="enrolno" value="07230028"><br>
+        Password: <input type="password" class="password"><br>
+        Confirm Password: <input type="password" class="confirmpassword"><br>
+
+        <button type="button" onclick="getFormInputs()">Sign Up</button>
+    </form>
+
+    <!-- Display output here -->
+    <div id="output"></div>
+    <script>
+        function getFormInputs() {
+            let firstname = document.querySelector(".firstname").value;
+            let lastname = document.querySelector(".lastname").value;
+            let gender = document.querySelector(".gender").value;
+            let enrolno = document.querySelector(".enrolno").value;
+
+            // Displaying the result in the div with id="output"
+            document.getElementById("output").innerHTML =
+                "FullName:"+firstname+" "+lastname+"<br>"+ 
+                "Gender: " + gender + "<br>" +
+                "Enrollment No: " + enrolno;
+        }
+    </script>
+</body>
+</html>
+
+
+

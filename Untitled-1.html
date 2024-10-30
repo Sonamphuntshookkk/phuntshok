@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span style="color: blueviolet;">Membership Register Form</span>
+        </h1>
+        <form>
+            <div class="form-group">
+                <label for="firstName" class="visually-hidden">First Name</label>
+                <input
+                type="text"
+                />
+            <small></small>
+            </div>
+          <div class="form-group">
+            <label for="lastName" class="visually-hidden">Last Name</label>
+            <input
+              type="text"
+            />
+            <small></small>
+          </div>
+          <div class="form-group">
+            <label for="Enrollment_No" class="visually-hidden">Enrollment No</label>
+            <input
+              type="number"
+            />
+            <small></small>
+          </div>
+          <div class="form-group">
+            <label for="email" class="visually-hidden">Email</label>
+            <input
+              type="text"
+            />
+            <small></small>
+          </div>
+          <div class="form-group">
+            <label for="newPassword" class="visually-hidden">Password</label>
+            <input
+              type="password"
+
+            />
+            <small></small>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword" class="visually-hidden">Confirm Password</label
+            >
+            <input
+              type="password"
+            />
+            <small></small>
+          </div>
+          <input
+            id="signupbtn"
+            type="submit"
+            class="btn btn-success w-100"
+            value="Register"
+            onclick="signUp()"
+          />
+        </form>
+    </div>
+</body>
+</html>
